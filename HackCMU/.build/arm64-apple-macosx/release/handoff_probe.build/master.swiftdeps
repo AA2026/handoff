@@ -1,0 +1,6 @@
+version: "Apple Swift version 6.0.2 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)"
+options: "d3f96ff23462f071547244fd87ef147909492ac254c086382e3e6e3eaf4ccb7f"
+build_start_time: [1789242998, 580259000]
+build_end_time: [1789242999, 929375000]
+inputs:
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/handoff-probe/main.swift": [1789242937, 205834450]

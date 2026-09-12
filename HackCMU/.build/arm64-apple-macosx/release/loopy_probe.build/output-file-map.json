@@ -1,0 +1,12 @@
+{
+  "": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/loopy_probe.build/loopy_probe.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/loopy_probe.build/loopy_probe.o",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/loopy_probe.build/master.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/loopy-probe/main.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/loopy_probe.build/main.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/loopy_probe.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/loopy_probe.build/main.swiftdeps"
+  }
+}

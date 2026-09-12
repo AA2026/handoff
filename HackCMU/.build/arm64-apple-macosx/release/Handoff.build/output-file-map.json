@@ -1,0 +1,162 @@
+{
+  "": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/Handoff.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/Handoff.o",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/master.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/AX/AXAccess.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/AXAccess.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/AXAccess~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/AXAccess.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/AX/AXDump.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/AXDump.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/AXDump~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/AXDump.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/AX/AXResolver.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/AXResolver.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/AXResolver~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/AXResolver.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/AX/AXTarget.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/AXTarget.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/AXTarget~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/AXTarget.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/App/AppDelegate.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/AppDelegate.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/AppDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/AppDelegate.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/App/HandoffApp.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/HandoffApp.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/HandoffApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/HandoffApp.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/App/PermissionsManager.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/PermissionsManager.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/PermissionsManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/PermissionsManager.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/App/PermissionsPanel.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/PermissionsPanel.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/PermissionsPanel~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/PermissionsPanel.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Capture/CaptureCoordinator.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/CaptureCoordinator.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/CaptureCoordinator~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/CaptureCoordinator.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Capture/EventTapService.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/EventTapService.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/EventTapService~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/EventTapService.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Capture/RawEvent.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/RawEvent.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/RawEvent~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/RawEvent.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Capture/RawEventRing.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/RawEventRing.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/RawEventRing~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/RawEventRing.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Detect/Atom.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/Atom.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/Atom~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/Atom.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Detect/DetectionPipeline.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/DetectionPipeline.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/DetectionPipeline~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/DetectionPipeline.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Detect/LoopDetector.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/LoopDetector.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/LoopDetector~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/LoopDetector.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Detect/LoopPlan.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/LoopPlan.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/LoopPlan~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/LoopPlan.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Detect/Normalizer.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/Normalizer.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/Normalizer~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/Normalizer.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Detect/NumberTransform.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/NumberTransform.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/NumberTransform~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/NumberTransform.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Detect/SemanticOp.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/SemanticOp.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/SemanticOp~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/SemanticOp.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Detect/TaskValue.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/TaskValue.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/TaskValue~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/TaskValue.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Detect/TitleTemplate.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/TitleTemplate.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/TitleTemplate~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/TitleTemplate.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Detect/ValueBinding.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/ValueBinding.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/ValueBinding~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/ValueBinding.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Library/PatternLibrary.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/PatternLibrary.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/PatternLibrary~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/PatternLibrary.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Replay/ReplayEngine.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/ReplayEngine.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/ReplayEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/ReplayEngine.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Replay/ReplayProbe.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/ReplayProbe.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/ReplayProbe~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/ReplayProbe.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Suggest/PatternSummary.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/PatternSummary.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/PatternSummary~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/PatternSummary.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Suggest/SuggestionController.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/SuggestionController.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/SuggestionController~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/SuggestionController.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Suggest/SuggestionPanel.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/SuggestionPanel.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/SuggestionPanel~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/SuggestionPanel.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Suggest/SuggestionView.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/SuggestionView.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/SuggestionView~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/SuggestionView.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Understand/ClaudeClient.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/ClaudeClient.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/ClaudeClient~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/ClaudeClient.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Handoff/Understand/TaskUnderstanding.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/TaskUnderstanding.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/TaskUnderstanding~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/Handoff.build/TaskUnderstanding.swiftdeps"
+  }
+}

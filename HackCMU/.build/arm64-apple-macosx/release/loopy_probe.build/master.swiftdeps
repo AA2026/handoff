@@ -1,0 +1,6 @@
+version: "Apple Swift version 6.0.2 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)"
+options: "3630206b24cce6aa556f229049b272de885831fb246a1235e1b71e06e8925a2b"
+build_start_time: [1789201377, 37250000]
+build_end_time: [1789201378, 173503000]
+inputs:
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/loopy-probe/main.swift": [1789197848, 467706091]

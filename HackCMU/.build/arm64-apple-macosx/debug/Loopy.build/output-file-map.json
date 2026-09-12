@@ -1,0 +1,191 @@
+{
+  "": {
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/master.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/AX/AXAccess.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AXAccess.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AXAccess.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AXAccess~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AXAccess.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/AX/AXDump.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AXDump.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AXDump.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AXDump~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AXDump.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/AX/AXResolver.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AXResolver.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AXResolver.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AXResolver~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AXResolver.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/AX/AXTarget.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AXTarget.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AXTarget.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AXTarget~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AXTarget.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/App/AppDelegate.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AppDelegate.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AppDelegate.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AppDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/AppDelegate.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/App/LoopyApp.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/LoopyApp.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/LoopyApp.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/LoopyApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/LoopyApp.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/App/PermissionsManager.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/PermissionsManager.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/PermissionsManager.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/PermissionsManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/PermissionsManager.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/App/PermissionsPanel.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/PermissionsPanel.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/PermissionsPanel.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/PermissionsPanel~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/PermissionsPanel.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Capture/CaptureCoordinator.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/CaptureCoordinator.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/CaptureCoordinator.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/CaptureCoordinator~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/CaptureCoordinator.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Capture/EventTapService.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/EventTapService.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/EventTapService.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/EventTapService~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/EventTapService.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Capture/RawEvent.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/RawEvent.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/RawEvent.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/RawEvent~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/RawEvent.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Capture/RawEventRing.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/RawEventRing.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/RawEventRing.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/RawEventRing~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/RawEventRing.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Detect/Atom.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/Atom.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/Atom.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/Atom~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/Atom.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Detect/DetectionPipeline.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/DetectionPipeline.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/DetectionPipeline.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/DetectionPipeline~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/DetectionPipeline.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Detect/LoopDetector.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/LoopDetector.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/LoopDetector.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/LoopDetector~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/LoopDetector.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Detect/LoopPlan.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/LoopPlan.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/LoopPlan.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/LoopPlan~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/LoopPlan.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Detect/Normalizer.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/Normalizer.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/Normalizer.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/Normalizer~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/Normalizer.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Detect/NumberTransform.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/NumberTransform.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/NumberTransform.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/NumberTransform~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/NumberTransform.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Detect/SemanticOp.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/SemanticOp.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/SemanticOp.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/SemanticOp~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/SemanticOp.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Detect/TaskValue.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/TaskValue.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/TaskValue.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/TaskValue~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/TaskValue.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Detect/TitleTemplate.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/TitleTemplate.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/TitleTemplate.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/TitleTemplate~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/TitleTemplate.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Detect/ValueBinding.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/ValueBinding.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/ValueBinding.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/ValueBinding~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/ValueBinding.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Library/PatternLibrary.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/PatternLibrary.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/PatternLibrary.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/PatternLibrary~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/PatternLibrary.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Replay/ReplayEngine.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/ReplayEngine.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/ReplayEngine.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/ReplayEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/ReplayEngine.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Replay/ReplayProbe.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/ReplayProbe.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/ReplayProbe.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/ReplayProbe~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/ReplayProbe.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Suggest/PatternSummary.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/PatternSummary.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/PatternSummary.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/PatternSummary~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/PatternSummary.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Suggest/SuggestionController.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/SuggestionController.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/SuggestionController.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/SuggestionController~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/SuggestionController.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Suggest/SuggestionPanel.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/SuggestionPanel.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/SuggestionPanel.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/SuggestionPanel~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/SuggestionPanel.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Suggest/SuggestionView.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/SuggestionView.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/SuggestionView.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/SuggestionView~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/SuggestionView.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Understand/ClaudeClient.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/ClaudeClient.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/ClaudeClient.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/ClaudeClient~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/ClaudeClient.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/Loopy/Understand/TaskUnderstanding.swift": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/TaskUnderstanding.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/TaskUnderstanding.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/TaskUnderstanding~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy.build/TaskUnderstanding.swiftdeps"
+  }
+}

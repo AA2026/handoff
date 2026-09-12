@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/debug/Loopy'
+relocations:     []
+...

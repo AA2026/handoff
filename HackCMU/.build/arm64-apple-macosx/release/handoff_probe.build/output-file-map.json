@@ -1,0 +1,12 @@
+{
+  "": {
+    "dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/handoff_probe.build/handoff_probe.d",
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/handoff_probe.build/handoff_probe.o",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/handoff_probe.build/master.swiftdeps"
+  },
+  "/Users/aayanali/Documents/CMU/HackCMU/Sources/handoff-probe/main.swift": {
+    "object": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/handoff_probe.build/main.swift.o",
+    "swiftmodule": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/handoff_probe.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/aayanali/Documents/CMU/HackCMU/.build/arm64-apple-macosx/release/handoff_probe.build/main.swiftdeps"
+  }
+}
