@@ -224,3 +224,10 @@ read-only probes.
 - Niyel Hassan
 - Yug Agarwal
 - Idris Kagalwala
+
+---
+
+## Other implementation
+
+`catalog/` is a second Handoff: it records copies/shortcuts/files, asks Grok to write a catalog plan, and runs that plan (client folders, drive times, CSV cleanup). The product this README documents is still **`HackCMU/`**.
+
