@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Handoff</title>
+<title>Handoff — Automate repetitive tasks on Mac</title>
 <meta name="description" content="A Mac app that notices when you repeat yourself and offers to finish the rest.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -180,7 +180,7 @@
   }
 
   /* Sections */
-  section { padding-block: 104px; }
+  section { padding-block: 104px; scroll-margin-top: 64px; }
   section + section { border-top: 1px solid var(--line); }
   .eyebrow {
     font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
@@ -205,19 +205,6 @@
   .head { margin-bottom: 56px; }
   .head.center { text-align: center; }
   .head.center .h2, .head.center .intro { margin-inline: auto; }
-
-  /* Statement band */
-  .band { padding-block: 72px; text-align: center; }
-  .band .statement {
-    font-size: clamp(26px, 4vw, 44px);
-    line-height: 1.15;
-    letter-spacing: -0.03em;
-    font-weight: 500;
-    max-width: 22ch;
-    margin-inline: auto;
-    text-wrap: balance;
-  }
-  .band .statement strong { font-weight: 700; color: var(--accent); }
 
   /* Steps */
   .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; counter-reset: step; }
@@ -304,13 +291,6 @@
   .cases h3 { font-size: 19px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.3; }
   .cases h3 .to { color: var(--muted); font-weight: 400; padding-inline: 0.35em; }
   .cases p { margin-top: 10px; color: var(--muted); font-size: 15.5px; text-wrap: pretty; }
-  .cases code { font-family: var(--mono); font-size: 12.5px; color: var(--muted); display: block; margin-top: 14px; }
-
-  /* Nots */
-  .nots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px 40px; }
-  .nots h3 { font-size: 24px; font-weight: 700; letter-spacing: -0.025em; line-height: 1.2; }
-  .nots p { margin-top: 10px; color: var(--muted); font-size: 16px; max-width: 30ch; text-wrap: pretty; }
-  .nots + .closing { margin-top: 56px; font-size: clamp(20px, 2.4vw, 26px); letter-spacing: -0.02em; font-weight: 500; }
 
   /* Privacy */
   .panel {
@@ -334,13 +314,6 @@
   .faq div:first-child { border-top: 0; padding-top: 0; }
   .faq dt { font-weight: 700; letter-spacing: -0.01em; font-size: 18px; }
   .faq dd { margin-top: 6px; color: var(--muted); text-wrap: pretty; }
-
-  /* Stack */
-  .stack { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-  .stack li { padding: 22px 22px 24px; border: 1px solid var(--line); border-radius: 16px; }
-  .stack li strong { display: block; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 6px; }
-  .stack li span { color: var(--muted); font-size: 15px; }
-  .team-note { margin-top: 40px; color: var(--muted); max-width: 56ch; text-wrap: pretty; }
 
   /* Closing */
   .close { padding-block: 104px; }
@@ -375,12 +348,11 @@
 
   @media (max-width: 900px) {
     .rhythm-grid, .panel, .faq-grid { grid-template-columns: 1fr; gap: 32px; }
-    .stack { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 720px) {
     section, .close { padding-block: 72px; }
     .hero { padding-top: 56px; }
-    .steps, .cases, .nots, .stack, .controls, .signals { grid-template-columns: 1fr; }
+    .steps, .cases, .controls, .signals { grid-template-columns: 1fr; }
     .head { margin-bottom: 36px; }
     .terminal .ln { white-space: normal; }
     .terminal .note { margin-left: 0; margin-top: 4px; flex-basis: 100%; width: max-content; max-width: 100%; }
@@ -404,18 +376,18 @@
       <a href="#how">How it works</a>
       <a href="#cases">Where it shows up</a>
       <a href="#privacy">Privacy</a>
-      <a class="button small" href="https://github.com/niyelhassan/handoff">Get it on GitHub</a>
+      <a class="button small" href="https://github.com/niyelhassan/handoff">View on GitHub</a>
     </div>
   </div>
 </nav>
 
 <header class="hero" id="top">
   <div class="wrap">
-    <span class="pill"><i aria-hidden="true"></i>Open source · macOS 14+ · Built at HackCMU 2026</span>
+    <span class="pill"><i aria-hidden="true"></i>For macOS 14+</span>
     <h1>It notices you repeating yourself.</h1>
     <p class="sub">Do something three times by hand. A card slides in and offers to do the rest.</p>
     <p class="cta">
-      <a class="button" href="https://github.com/niyelhassan/handoff">Get it on GitHub</a>
+      <a class="button" href="https://github.com/niyelhassan/handoff">View on GitHub</a>
       <a class="textlink" href="#how">See how it works</a>
     </p>
     <p class="fine">Free. No account. Bring your own Grok API key.</p>
@@ -439,12 +411,6 @@
 </header>
 
 <main>
-  <div class="band reveal">
-    <div class="wrap">
-      <p class="statement">Each pass takes ten seconds. The roster has forty clients. You wouldn't call it a task worth automating. <strong>You'd call it Tuesday.</strong></p>
-    </div>
-  </div>
-
   <section id="how" aria-labelledby="how-h">
     <div class="wrap">
       <div class="head reveal">
@@ -459,11 +425,11 @@
         </li>
         <li>
           <h3>It notices.</h3>
-          <p>A deterministic pattern finder spots the same sequence of actions on three different pieces of data. Grok confirms it is a real routine, not a coincidence. A card slides in from the right edge of the screen.</p>
+          <p>Handoff recognizes a repeated task and offers to finish the remaining items.</p>
         </li>
         <li>
           <h3>You say yes.</h3>
-          <p>Grok writes a short plan from a fixed catalog of steps. You see the steps before anything runs. Click <strong>Do the rest</strong> and it finishes the remaining rows. Click <strong>Not now</strong> and it stays quiet.</p>
+          <p>Review the steps before anything runs. Accept the plan to finish the task, or choose <strong>Not now</strong> to keep working.</p>
         </li>
       </ol>
     </div>
@@ -474,7 +440,7 @@
       <div class="rhythm-grid">
         <div class="reveal">
           <p class="eyebrow">The rhythm</p>
-          <h2 class="h2" id="rhythm-h">It doesn't read your screen. <em>It watches your hands.</em></h2>
+          <h2 class="h2" id="rhythm-h">Recognizes the steps <em>you repeat.</em></h2>
           <p class="intro">A handful of signals is enough to see a loop. Plain typing is never recorded.</p>
           <ul class="signals">
             <li><strong>Copies and pastes</strong><kbd>⌘C</kbd> followed by a clipboard change, and <kbd>⌘V</kbd>. The copied text is what tells passes apart.</li>
@@ -504,63 +470,33 @@
           <div class="trail" aria-hidden="true"><span>Excel</span><i></i><span class="hot">Finder</span><i></i><span>Excel</span></div>
           <h3>Copy a client’s name<span class="to" aria-hidden="true">→</span>new folder<span class="to" aria-hidden="true">→</span>paste the name</h3>
           <p>A project manager setting up a workspace folder for every client on the roster. After the third folder: “Notice you’re creating folders from this list—want me to generate the rest?”</p>
-          <code>readCSV → forEach → createFolder Clients/{{row.first}}</code>
         </li>
         <li>
           <div class="trail" aria-hidden="true"><span>Sheet</span><i></i><span class="hot">Maps</span><i></i><span>Sheet</span></div>
           <h3>Copy an address<span class="to" aria-hidden="true">→</span>get directions<span class="to" aria-hidden="true">→</span>type the drive time back</h3>
           <p>A list of client sites and the minutes from the office. Handoff routes the remaining addresses itself with Apple Maps and writes a drive-times table next to the sheet.</p>
-          <code>readCSV → forEach → driveTime → appendCSV {{stem}}-drive-times.csv</code>
         </li>
         <li>
           <div class="trail" aria-hidden="true"><span>Download</span><i></i><span class="hot">Spreadsheet</span><i></i><span>Export</span></div>
           <h3>Open the weekly export<span class="to" aria-hidden="true">→</span>drop, trim, sort<span class="to" aria-hidden="true">→</span>save a clean copy</h3>
           <p>The same cleanup on every sales CSV. The plan is checked against the file you produced by hand before it is offered, and it can run each time a new export lands.</p>
-          <code>readCSV → transformTable… → writeCSV {{stem}}-clean.csv</code>
         </li>
         <li>
           <div class="trail" aria-hidden="true"><span>Sheet</span><i></i><span class="hot">Web form</span><i></i><span>Submit</span></div>
           <h3>Copy name and email<span class="to" aria-hidden="true">→</span>fill the form<span class="to" aria-hidden="true">→</span>submit, next row</h3>
           <p>New hires into the HR form. Handoff fills the fields through the browser’s accessibility tree and asks you before every submit, because a submit cannot be undone.</p>
-          <code>readCSV → forEach → setValue Name, Email → ask → click Submit</code>
         </li>
         <li>
           <div class="trail" aria-hidden="true"><span>Downloads</span><i></i><span class="hot">Rename</span><i></i><span>Invoices</span></div>
           <h3>Download an invoice<span class="to" aria-hidden="true">→</span>rename with the date<span class="to" aria-hidden="true">→</span>move it to Invoices</h3>
           <p>Filing by hand, three PDFs in a row. Afterwards it can file each new PDF as it arrives, and every move can be undone.</p>
-          <code>moveFile {{file}} → Invoices/{{today}}-{{stem}}.pdf</code>
         </li>
         <li>
           <div class="trail" aria-hidden="true"><span>Screenshot</span><i></i><span class="hot">Resize</span><i></i><span>Web/</span></div>
           <h3>Open a screenshot<span class="to" aria-hidden="true">→</span>resize to 1280<span class="to" aria-hidden="true">→</span>export a JPEG</h3>
           <p>Images for a blog post, one after another. The remaining screenshots are resized and converted without opening an editor.</p>
-          <code>resizeImage → convertImage → Web/{{stem}}.jpg</code>
         </li>
       </ul>
-    </div>
-  </section>
-
-  <section id="not" aria-labelledby="not-h">
-    <div class="wrap">
-      <div class="head reveal">
-        <p class="eyebrow">What it isn't</p>
-        <h2 class="h2" id="not-h">Nothing to set up. <em>Nothing to describe.</em></h2>
-      </div>
-      <ul class="nots reveal">
-        <li>
-          <h3>Not a macro you record.</h3>
-          <p>There is no record button. It does not replay your keystrokes; it rebuilds the task from what the steps meant.</p>
-        </li>
-        <li>
-          <h3>Not an agent you prompt.</h3>
-          <p>You don't describe the task. You've already shown it, by doing it three times.</p>
-        </li>
-        <li>
-          <h3>Not a workflow you build.</h3>
-          <p>Nothing to configure in advance. Keep the routine and let it run when a file lands, or throw it away when the batch is done.</p>
-        </li>
-      </ul>
-      <p class="closing reveal">It only speaks up about what you're doing right now, in a burst, and only after the third time.</p>
     </div>
   </section>
 
@@ -570,13 +506,13 @@
         <div class="head">
           <p class="eyebrow">Privacy and control</p>
           <h2 class="h2" id="privacy-h">Yours, <em>on your machine.</em></h2>
-          <p class="intro">What it sees stays in a local database. What it does waits for your click.</p>
+          <p class="intro">Activity is stored on your Mac. Detected routines are sent to Grok to confirm the pattern and build a plan you can review.</p>
         </div>
         <ul class="controls">
           <li><strong>Local memory.</strong><span>Activity lives in a SQLite file on your Mac: fourteen days of actions, forty-eight hours of details, then gone. “Delete everything” wipes it.</span></li>
           <li><strong>What reaches Grok.</strong><span>Only when a repeat is detected, and only that candidate: the sequence of actions plus the window titles, URLs and copied text that make up the three passes. Never your typing, never a screen recording.</span></li>
           <li><strong>Never plain typing.</strong><span>Password fields, private browser windows and apps or sites you exclude produce nothing. Pause it from the menu bar at any time.</span></li>
-          <li><strong>Waits for you.</strong><span>Every run starts with the card and your click. Anything irreversible, like a submit button, asks first. Touch the keyboard or mouse during a run and it stops.</span></li>
+          <li><strong>Waits for you.</strong><span>Review each new routine before running it, then choose whether to run it on demand or with a trigger. Submit buttons ask first. Touch the keyboard or mouse during a run and it stops.</span></li>
           <li><strong>Undo.</strong><span>Files it wrote, moved or renamed and rows it appended can be undone exactly, and it refuses to overwrite anything you edited afterwards.</span></li>
           <li><strong>Your key.</strong><span>Plans are built with your own xAI API key, stored owner-only on disk. There is no Handoff account and no Handoff server.</span></li>
         </ul>
@@ -594,7 +530,7 @@
         <dl class="faq reveal">
           <div>
             <dt>Which apps does it work with?</dt>
-            <dd>It watches every app through macOS Accessibility, so there is no plugin per app. It reads the most from Finder, Safari, Excel, Numbers and Mail. The actions it can take come from a fixed catalog: folders and files, CSV and table transforms, images, drive times, filling and clicking in web pages, appending to Numbers or Excel, and running a Shortcut.</dd>
+            <dd>It works through macOS Accessibility, with the most support for Finder, Safari, Excel, Numbers and Mail. Supported tasks include organizing files, cleaning tables, resizing images, looking up drive times and filling forms.</dd>
           </div>
           <div>
             <dt>How many times do I have to do something before it offers?</dt>
@@ -617,28 +553,12 @@
     </div>
   </section>
 
-  <section id="team" aria-labelledby="team-h">
-    <div class="wrap">
-      <div class="head reveal">
-        <p class="eyebrow">Under the hood</p>
-        <h2 class="h2" id="team-h">Built in a weekend, <em>at Carnegie Mellon.</em></h2>
-      </div>
-      <ul class="stack reveal">
-        <li><strong>Swift, SwiftUI, AppKit</strong><span>A native Swift package. No Electron, no web view.</span></li>
-        <li><strong>Accessibility + FSEvents</strong><span>Clicks resolve to real UI elements; new files are noticed as they land.</span></li>
-        <li><strong>Deterministic pattern finder</strong><span>Finds repeated windows of actions with distinct data. No model call until a candidate exists.</span></li>
-        <li><strong>Grok, fenced in</strong><span>Strict JSON schema, a whitelist of steps per pattern shape, validation and repair before anything runs.</span></li>
-      </ul>
-      <p class="team-note reveal">Handoff started at HackCMU 2026, after one too many afternoons of copying things between windows. The code, the demo routines and the tests are on GitHub.</p>
-    </div>
-  </section>
-
   <div class="close">
     <div class="wrap">
       <div class="box reveal">
         <h2>Do the first three. Hand off the rest.</h2>
-        <p>Clone the repo, run <code>scripts/build-app.sh</code>, allow Accessibility, add a Grok key. Then go do something three times.</p>
-        <p class="cta"><a class="button" href="https://github.com/niyelhassan/handoff">Get it on GitHub</a></p>
+        <p>Build the Mac app from source, enable Accessibility, and add your Grok API key. Setup steps and example routines are on GitHub.</p>
+        <p class="cta"><a class="button" href="https://github.com/niyelhassan/handoff">View on GitHub</a></p>
       </div>
     </div>
   </div>

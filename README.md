@@ -2,8 +2,6 @@
 
 A native macOS app that notices when you repeat a procedure by hand, slides in a card offering to take it over, builds the automation with Grok, and finishes the rest. No recording, no teaching, no scripting.
 
-Built at HackCMU 2026.
-
 ## How it works
 
 ```
