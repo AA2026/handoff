@@ -1,226 +1,74 @@
 # Handoff
 
-**Handoff watches how you work, notices when you're doing the same multi-step
-task over and over, and offers to finish the rest for you — after showing you
-exactly what it will do.**
-
-It's a macOS menu-bar app. No scripting, no macro recording, no "teach it a
-workflow." You just work; when Handoff sees a repeated task take shape, a small
-window appears: *"Repeating a 5-step task across Numbers and Safari — automate
-the rest?"* You review, adjust the count, and it takes over — stopping the
-instant anything looks wrong.
-
----
-
-## What makes it different from a macro recorder
-
-A macro replays coordinates and keystrokes blindly. Handoff understands the
-task:
-
-- **It targets elements, not pixels.** "Click the 4th row" is re-found in the
-  live accessibility tree each pass, so it survives the window moving, resizing,
-  or scrolling. A recorded coordinate does not.
-- **It knows what varies.** Walking down a list, a value read off one screen and
-  typed into another, a number that counts up, a name pasted from the clipboard
-  — Handoff works out the *rule* from a few passes and reproduces it, instead of
-  replaying the old value.
-- **Identity is structural, not literal.** A tab titled "…to 520 Chestnut St -
-  Google Maps" and one titled "…to 88 Oak Ave - Google Maps" are recognised as
-  the *same step* with a changing value — which is why real tasks, where the
-  data lives in the labels, are detectable at all.
-- **It stops when the world isn't what it expected.** An error dialog, a
-  "replace existing file?" sheet, a search that returned nothing — Handoff flags
-  that row and moves on, rather than pasting garbage or clicking through an
-  alert.
-- **It hands the risky part back.** By default it does all the mechanical work
-  and stops before the irreversible step (Send, Save, Post) for you to confirm.
-
----
+A native macOS app that notices when you repeat a procedure by hand, slides in a card offering to take it over, builds the automation with Grok, and finishes the rest. No recording, no teaching, no scripting.
 
 ## How it works
 
 ```
-   watch  →  normalize  →  detect  →  understand  →  confirm  →  replay
-   event      keystrokes    shortest   name it +      editable    re-find
-   tap        become        repeating  what "the      dialog +    elements
-   (all       "steps":      sequence   rest" means    dry-run     live, and
-   apps)      Copy, Click   + which    (Claude,       preview,    guard every
-              a row, …      parts vary optional)      run count   committing step
+Observer  →  Memory (SQLite)  →  Pattern finder  →  Grok judge  →  slide-in card (top right)
+                                                        ↓ Automate
+                                       AI build → validate → verify → review sheet → Try it
+                                                        ↓
+                                  Runner (Accessibility · files · tables · AppleScript) + Undo
+                                                        ↓
+                          triggers: manual · context · file · schedule · loop continuation
 ```
 
-**Privacy is built into the pipeline, not bolted on:**
+- **Observer** (`Sources/RoutineScout/Observer.swift`): app activations, clicks resolved to accessible elements, copy/paste, command shortcuts only (never plain typing), file events in Downloads/Desktop/Documents, spreadsheet and mail context via read-only AppleScript. Password fields, private windows, ignored apps and sites, and paused time produce nothing.
+- **Memory** (`Sources/ScoutCore/Memory.swift`): local SQLite. Activity 14 days, content details 48 hours, undo copies 1 minute. "Delete everything" wipes it and the API key.
+- **Pattern finder** (`Sources/ScoutCore/PatternFinder.swift`): deterministic; groups repeated token windows across distinct instances, tags the shape (`folders`, `travel`, `loop`, `transform`, `image`, `pipeline`, `transfer`, `collect`), and scores them. No model calls.
+- **AI** (`Sources/ScoutCore/AIClient.swift`): Grok via the xAI OpenAI-compatible API with strict JSON-schema output. Default model `grok-4.3`. Four uses: judge a candidate, build a routine, fix a step target from the current UI structure, edit with words. The model can only pick steps from the catalog (`Sources/ScoutCore/Catalog.swift`); it never returns code. Every plan is validated against the catalog, checked against the evidence (a CSV cleanup must reproduce the observed output), made generic (`{{file}}`, `{{folder}}`, `{{stem}}`, `{{today}}`), and repaired deterministically (a confirmation is inserted before any submit, unused reads are dropped, browser targets are completed).
+- **Runner** (`Sources/ScoutCore/Runner.swift`, `Sources/RoutineScout/MacExecutor.swift`): interprets the catalog deterministically, verifies each step, journals progress so loops resume without duplicating work, and offers exact Undo for files, appended rows, and filled fields.
 
-- Everything above happens **locally**. The learned-pattern library on disk
-  (`~/.handoff/patterns.json`, mode 0600) stores **structure only** — step
-  kinds, role paths, hashes — never file names, typed text, URLs, or window
-  titles. You can read the file; it doesn't reveal what you did.
-- The **only** thing that ever leaves the machine is the optional task-naming
-  request to Claude, and it sends **structure plus the site hostname** by
-  default (`Copy`, `Click item 4 of 12`, `mail.google.com`) — never the
-  contents. It's off unless you configure an API key, and a network failure
-  never costs you the suggestion.
-- Keystrokes typed while macOS secure input is on (password fields) never enter
-  the pipeline at all.
+## Build and run
 
----
-
-## Requirements
-
-- macOS (built and tested on macOS 15/26, Apple Silicon).
-- Xcode toolchain (the build uses it directly; it does **not** use `xcodebuild`,
-  which is broken on the dev machine — see `HackCMU/scripts/env.sh`).
-- Two macOS permissions, granted once: **Accessibility** and **Input
-  Monitoring**. Handoff cannot function without both, and there is no
-  App-Store-able way around that — reading other apps' UI and watching input
-  require them.
-
-The project lives in `HackCMU/`. All commands below run from there.
-
----
-
-## Quick start
+Requires macOS 14+ and Swift 5.10+ (Command Line Tools are enough).
 
 ```sh
-cd HackCMU
-./handoff cert      # one-time: create the "Handoff Dev" signing identity
-./handoff run       # build, sign, launch (menu-bar icon appears)
-# → grant Accessibility + Input Monitoring (menu-bar panel has Grant buttons)
-./handoff doctor    # verify everything is ready
+scripts/build-app.sh          # builds "./Handoff.app" (git-ignored) and signs it
+open "./Handoff.app"
 ```
 
-`./handoff demo` shows the suggestion dialog immediately, with no detection
-needed — the fastest way to see what Handoff looks like.
+On first launch click **Allow access** and enable Handoff under System Settings → Privacy & Security → Accessibility. The build script signs with your "Apple Development" identity when one exists so this grant survives rebuilds; ad-hoc builds must be re-allowed after every build.
 
----
+Add a Grok API key in **Preferences**. It is stored in `~/Library/Application Support/RoutineScout/xai-key.txt` (owner-only permissions); `XAI_API_KEY` in the environment also works. The Keychain is intentionally not used because items created by one build prompt for the login password from every other build. Without a key, the examples still work using saved offline plans.
 
-## Demo playbook (for judges)
+## The demo routines
 
-The single most important lesson from testing: **detection needs the passes to
-be consistent.** Do the task the *same way* each time. That's the whole trick.
+| Case | What the person kept doing | What Handoff builds | Runs when |
+|---|---|---|---|
+| **Client folders from a roster** | In Excel: select a client name, ⌘C. ⌘Tab to Finder. ⌘⇧N, ⌘V, Return. Back to Excel, next row. | `readCSV → forEach → createFolder Clients/{{row.first}} → endLoop` | Card: “Notice you’re creating folders from this list—want me to generate the rest?” after the third folder |
+| Drive times from the office | Copy an address, get directions in Maps, type the minutes back | `readCSV → forEach → driveTime → appendCSV {{stem}}-drive-times.csv` (MapKit routing) | After the third address |
+| New hires into the HR form | Copy name and email from a people table into a web form, submit, next row | `readCSV → forEach → setValue Name, Email → ask → click Submit → endLoop` | The form page is open (loop trigger) or on demand |
+| Weekly sales export cleanup | Open the downloaded CSV, drop a column, trim, fix amounts, sort, export a clean copy | `readCSV → transformTable… → writeCSV {{stem}}-clean.csv` proven against the observed output | A CSV lands in the folder (file trigger) |
+| Apartment hunt: save each listing | Copy listing name, price and link from each listing page into a spreadsheet | `readText Listing name, Price → readURL → appendCSV` | A listing page is open (context trigger) |
+| Invoice filing by date | Rename each downloaded invoice with today’s date and move it to Invoices | `moveFile {{file}} → {{folder}}/Invoices/{{today}}-{{stem}}.pdf` | A PDF lands in the folder (file trigger) |
+| Screenshots to web JPEGs | Resize each screenshot to 1280 px and export as JPEG into Web | `resizeImage → convertImage → Web/{{stem}}.jpg` | A PNG lands in the folder (file trigger) |
 
-### Before you present
+Menu bar → **Replay an example** (or Preferences → **Try an example**) feeds three recorded repetitions into memory exactly as the observer would have stored them, then runs the real pipeline: pattern finder → Grok judge → notification and suggestion card → **Automate** → Grok build → review sheet → **Try it now** → choose when it should run. Sample files live in `~/Downloads/Handoff Demo` (its own folder, so file triggers can be shown live without touching real files); the practice web pages are served on `127.0.0.1:8790` by the app itself. **Open a ready-made routine** skips detection.
 
-1. **`./handoff doctor`** until every line is green. It checks signing,
-   permissions, and a live event tap. If permissions show red, click the
-   menu-bar icon → Grant, or System Settings ▸ Privacy & Security ▸
-   Accessibility / Input Monitoring ▸ enable **Handoff**.
-2. Have your demo apps open and a **scratch folder / sheet prepared**, so
-   nothing depends on live typing you might fumble.
-3. Keep **`./handoff demo`** ready as a zero-risk fallback.
-
-### Demo A — guaranteed (the dialog)
+## Tests
 
 ```sh
-./handoff demo
+swift run ScoutTests            # core: CSV, transforms, patterns, privacy, SQLite, runner, undo, resume, triggers
+SCOUT_LIVE_TEST=1 swift run ScoutTests   # also judges, builds, validates and runs the demo cases through the real Grok API (SCOUT_LIVE_SHAPES=folders limits it; SCOUT_MODEL overrides the model)
+scripts/native-test.sh          # native rehearsal: real Safari pages, Accessibility reads/writes, files, Undo, plus two Grok-built routines run live (needs Accessibility)
 ```
 
-Shows the full flow on a built-in sample: the suggestion, the step breakdown
-with the *varying* values flagged, then (click **Automate the rest…**) the
-confirmation screen — editable name, editable run count, stop-before-commit
-toggle, and a **dry-run preview** of exactly what the next pass would do. This
-never depends on live detection. Lead with it for a sure thing, or use it to
-explain the UX after a live run.
+The native rehearsal writes `integration-report.txt` and the Safari accessibility snapshot of the practice page into `TestResults/`. It launches the app through LaunchServices (`open`) so macOS applies the app's own Accessibility grant rather than the terminal's, and it stops the moment you touch the keyboard or mouse (the same safety stop real runs use), so leave the Mac idle for two to three minutes while it runs.
 
-### Demo B — live detection (the "wow")
+## Landing page
 
-The reliable live demo is a **Finder list walk** — Finder exposes clean,
-enumerable rows.
+`index.html` is a self-contained static page describing the product; open it directly in a browser.
 
-1. Make a scratch folder with ~8 files, open it in Finder **as List view**.
-2. Do the *same* action to three files in a row — e.g. click a row → ⌘I (Get
-   Info) → ⌘W (close). **Exactly the same each time.**
-3. After the third pass, the suggestion window appears. Click through to the
-   confirmation and its dry-run preview.
+## Layout
 
-What makes or breaks it:
-- **Be consistent** — same clicks, same order, no detours. One stray click is
-  tolerated; two, or clicking different things each pass, breaks the period.
-- **Don't do unrelated things mid-task** — a detour to Messages/Terminal adds
-  noise the detector must see past.
-- Click the **menu-bar icon** any time to show the live readout: steps seen,
-  patterns found, and — if nothing popped up — *why* (e.g. "this is just
-  typing").
-
-### If a live run doesn't fire
-
-Open the menu-bar panel and read the reason aloud — that transparency is part of
-the story ("it saw the steps; it didn't offer because…"). Then fall back to
-`./handoff demo`. To capture a run for diagnosis: `./handoff trace`, do the task,
-then read `/tmp/handoff-trace.txt`.
-
----
-
-## Use cases it's built for
-
-Cross-app, repetitive "handoff" tasks where only the data changes:
-
-| Task | Shape Handoff detects |
-|---|---|
-| Copy each Canvas assignment into Google Calendar | walk a list → copy → switch app → paste |
-| Rename / Get-Info each file in a folder | walk rows → ⌘I → type → ⌘W |
-| Address → drive time (read Maps, back into a sheet) | copy → Maps → **read the "N min" off screen** → back → paste |
-| Batch-create folders from a client list | copy name → Finder → ⌘⇧N → paste → Enter |
-| Bulk-open & save URLs from a list | copy URL → new tab → paste → save |
-| Dedupe leads: search an email, paste the result URL back | copy → search → **copy result** → paste back |
-
-The last three carry a **wrinkle** — an invalid name, a "replace file?" sheet, a
-zero-results search — and Handoff's guarded replay flags that row and continues
-instead of corrupting data.
-
----
-
-## Commands
-
-| Command | What it does |
-|---|---|
-| `./handoff run` | build, sign, launch |
-| `./handoff demo` | show the suggestion dialog on a sample (no detection needed) |
-| `./handoff doctor` | **go-time preflight** — signing, permissions, live tap |
-| `./handoff test` | full self-test suite (191 checks) + render the dialog |
-| `./handoff trace` | run with step/URL tracing to `/tmp/handoff-trace.txt` |
-| `./handoff axdump` | dump what the resolver sees in Finder/Safari (reads only) |
-| `./handoff cert` | create the stable "Handoff Dev" signing identity |
-| `./handoff reset` | reset the TCC permission grants |
-| `./handoff dr` | print the designated requirement (must be cert-based) |
-| `./handoff clean` | remove build artifacts |
-
-Optional task naming with Claude: set `HANDOFF_ANTHROPIC_API_KEY` (or write
-`~/.handoff/anthropic-key`). Without it, a built-in namer is used — fine for the
-demo. `./handoff understand` prints the exact payload that would be sent.
-
----
-
-## Architecture
-
-Swift, no external dependencies. Source under `HackCMU/Sources/Handoff/`:
-
-- **`Capture/`** — the global event tap on its own thread, a lock-free ring
-  buffer, and the enrich queue. The tap callback does one thing (copy a POD
-  struct into the ring) so it never overruns the budget that would get it
-  silently disabled.
-- **`Detect/`** — normalizes raw events into human-legible *steps*, then finds
-  the shortest repeating sequence. Strict identity first, **structural identity**
-  (position over label) as the fallback that catches value-in-title loops.
-  `ValueBinding` / `NumberTransform` / `TitleTemplate` work out how each varying
-  step advances. `TaskValue` gates out things not worth automating.
-- **`AX/`** — accessibility: hit-test a click to a real element, re-find it
-  later by role path, read values off other windows, detect blocking dialogs.
-- **`Understand/`** — the optional, privacy-minimal Claude task-naming call.
-- **`Suggest/`** — the non-activating panel and the two-stage dialog.
-- **`Replay/`** — re-finds each element live, prefers `AXPress` over synthetic
-  clicks, paces web tasks, and **guards every committing step** (`ReplayGuard`).
-  Any real keypress aborts instantly.
-- **`Library/`** — the local, structure-only pattern store + prefix recognition.
-
-Detection logic is covered by a headless suite (`./handoff test`); the UI is
-verified by rendering it; AX and replay are exercised against live windows with
-read-only probes.
-
----
-
-## Team Members
-
-- Aayan Ali
-- Niyel Hassan
-- Yug Agarwal
-- Idris Kagalwala
+```
+Package.swift
+Sources/ScoutCore      platform-independent core: models, catalog, memory, pattern finder, runner, tables, triggers, AI client, fixtures
+Sources/RoutineScout   the app: menu bar, views, observer, accessibility, executor, AppleScript templates, practice server, self-test
+Sources/CSQLite        system SQLite module map
+Tests/ScoutCoreTests   portable test runner (no XCTest dependency)
+scripts/               build-app.sh, native-test.sh
+index.html             landing page
+```
